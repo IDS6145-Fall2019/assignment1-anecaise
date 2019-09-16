@@ -26,12 +26,13 @@ Historically, it has been important to improve the riding experience of publish 
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
 
 * Subway systems in major cities experience severe congestion at rush hour
-* The WMATA aims to increase the transport capacity of escalators located at exits by 10%
-* Transport capacity will be measured here by the number of pedestrians carried from bottom to top of the escalator per minute
-* The current experiment will compare capacities with escalator speeds set to 4 m_s, 6 m_s, and 8 m/s. 
-* The model will assume pedestrians arrive at the platform at a set rate (100 per min) 
+* One possibility to alleviate this congestion is to increase the throughput of subway escalators, which will in turn decrease transit time of riders
+* The current project will construct a model that allows us to compare transit time of riders with escalator speeds set between .4 m/s and .8 m/s (standard configurations)
+* Transit time will be measured from the time a pedestrian is waiting at the bottom landing plate of an escalator to the time they exit at the upper landing plate
+* A 10% decrease in transit time will be considered a effective esclator configuration
 * The modeled will focus on an exit-only escalator (ignoring bidirectional entrances)
-* It is assumed that pedestrians occupy the escalator uniformly (2 per step)
+* Pedestrians will not be allowed to walk up the escalator, but may occupy the steps non-uniformly (1 or 2 persons per step)
+* Travelers will arrive in blocks to emulate the arrival of trains at scheduled periods
 
 ## (Part 1.2) Subway (My Problem) Model *(10%)*
 (remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
