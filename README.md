@@ -20,7 +20,7 @@ One anecdotal example of this systemic inefficiency is  the North Bethesda metro
 
 Historically, it has been important to improve the riding experience of publish transportation to encourage more commuters to use these systems over driving. Many solutions focus on improving the reliability of trains, thus reducing possible delays. Solutions like these depend on lengthy and expensive renovations. 
 
-Image of Subway City System
+![Image of Subway City System](images/subway_model.png)
 
 ## (Part 1.1): Requirements (Experimental Design) *(10%)*
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
@@ -36,7 +36,7 @@ Image of Subway City System
 ## (Part 1.2) Subway (My Problem) Model *(10%)*
 (remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
 (remove: Look at the [*Object Diagram*](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
-![Object Diagram] (images/Object_Diagram.png)
+![Object Diagram](images/Object_Diagram.png)
 * [*Object Diagram*](model/object_diagram.md) - provides the high level overview of components
 * [*Class Diagram*](model/class_diagram.md) - provides details of (what are you providing details of)
 * [*Behavior Diagram*](model/behavior_diagram.md) - provides details of (what are you providing details of)
@@ -80,7 +80,7 @@ Find a datasource that looks at part of this model - subway stations locations /
 ## (Part 3.2) -  Plotting 2D Random Number Generators *(15%)*
 This portion of the assignment looks at generating random numbers in Python and understanding how to properly plot them. Plot two different random numbers, pseudo random and quasi random, for five different N values. There should be 10 subplots, all properly formatted 2D plots. Note, each of the N points will have two coordinates, an x and a y, therefore you will need to generate two random numbers for each point. You should replace the image with your results in a simalar format. Discuss how the patterns differ. Feel free to change the N values from the suggested N values in the image to state your case.
 
-Image of 2d template City
+![Image of 2d template City](images/2Dtemplate.png)
 
 ## (Part 3.3) -  Plotting 1D Random Distributions *(15%)*
 Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
