@@ -1,56 +1,55 @@
 # Assignment 1 - Designing Models and Analyzing Data (Template)
 (remove: **text between brackets to be removed**)
 
-> * Participant name: (your name)
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Participant name: Aaron Necaise  
+> * Project Title: (Title of the problem you are looking and modeling)  
 
 # General Introduction
+The first part of this assignment explores designing models (and basic Python/Git features).
 
-The first part of this assignment explores designing models (and basic Python/Git features). 
-
-We will look at **subway model in a city** system. A **subway system** is an underground, tube, or metro, underground railway system used to transport large numbers of passengers within urban and suburban areas - modern subways use different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently. 
+We will look at **subway model in a city** system. A **subway system** is an underground, tube, or metro, underground railway system used to transport large numbers of passengers within urban and suburban areas - modern subways use different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently.
 
 The second part of the assignment explores data analysis. Data analysis and visualization is key to both the input and output of simulations. This assignment explores different random number generators, distributions, visualizations, and statistics. Additionally, it will look at getting you accustomed to specifying input and output variables to a system. We will also practice working with real data.
 
-
 # Part 1: Designing a Model - Subway System
+The current project will attempt to simulate the impact of adjusting escalator speed at subway stops on pedestrian traffic.
 
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
+During the busiest times of the day, subways stops become congested around entry points. Increasing the capacity of these entry points may reduce pedestrian traffic.  With an increasing percentage of the world’s population concentrated in cities—and an increasing urgency to adjust our emission levels—developing efficient public transportation options is an important challenge for the future.  
 
-(remove: Add real-world examples, if any)
+One anecdotal example of this systemic inefficiency is  the North Bethesda metro stop in Maryland where the escalator often becomes backed up enough that payment terminal are obstructed. 
 
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+Historically, it has been important to improve the riding experience of publish transportation to encourage more commuters to use these systems over driving. Many solutions focus on improving the reliability of trains, thus reducing possible delays. Solutions like these depend on lengthy and expensive renovations. 
 
+Image of Subway City System
 
-![Image of Subway City System](images/subway_model.png)
-
-## (Part 1.1): Requirements (Experimental Design) **(10%)**
-
+## (Part 1.1): Requirements (Experimental Design) *(10%)*
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
 
-## (Part 1.2) Subway (My Problem) Model **(10%)**
+* Subway systems in major cities experience severe congestion at rush hour
+* The WMATA aims to increase the transport capacity of escalators located at exits by 10%
+* Transport capacity will be measured here by the number of pedestrians carried from bottom to top of the escalator per minute
+* The current experiment will compare capacities with escalator speeds set to 4 m_s, 6 m_s, and 8 m/s. 
+* The model will assume pedestrians arrive at the platform at a set rate (100 per min) 
+* The modeled will focus on an exit-only escalator (ignoring bidirectional entrances)
+* It is assumed that pedestrians occupy the escalator uniformly (2 per step)
 
+## (Part 1.2) Subway (My Problem) Model *(10%)*
 (remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
-(remove: Look at the [**Object Diagram**](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
+(remove: Look at the [*Object Diagram*](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
+![Object Diagram] (images/Object_Diagram.png)
+* [*Object Diagram*](model/object_diagram.md) - provides the high level overview of components
+* [*Class Diagram*](model/class_diagram.md) - provides details of (what are you providing details of)
+* [*Behavior Diagram*](model/behavior_diagram.md) - provides details of (what are you providing details of)
+* [*Agent / User case* (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
 
-* [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components
-* [**Class Diagram**](model/class_diagram.md) - provides details of (what are you providing details of)
-* [**Behavior Diagram**](model/behavior_diagram.md) - provides details of (what are you providing details of)
-* [**Agent / User case** (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
-
-## (Part 1.3) Subway (My Problem) Simulation **(10%)**
-
+## (Part 1.3) Subway (My Problem) Simulation *(10%)*
 (remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
 
-
-## (Part 1.4) Subway City (My Problem) Model **(10%)**
-[**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
+## (Part 1.4) Subway City (My Problem) Model *(10%)*
+[*Code template*](code/README.md) - Starting coding framework for the (insert your exact problem here.)
 You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
 
-
-
-## (Part 1.5) Specifying the Inputs to a System **(10%)**
-
+## (Part 1.5) Specifying the Inputs to a System *(10%)*
 (remove the below points once ideas are satisfied)
 * Specify the independent and dependent input variables of your subway esclator model
 * Specify where the data will come from measured subset of real data (empirical) or synthetic data
@@ -59,20 +58,15 @@ You are expected to create the python files - the code should run without errors
 * What ways will you visualize your data - charts, and graphs you will create?
 * What clever way will you visualize your output with a useful infographic?
 
-
-
 # Part 2: Creating a Model from Code
 
-## (Part 2.1) **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model **(10%)**
-Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [**the following folder**](code/POTS_system/). Please create a **class** diagram of this model (replace the placeholder diagram). (you can use paper and pencil or a digital tool).
-
-
+## (Part 2.1) *P*ortable *O*rganic *T*rouble-free *S*elf-watering System (*POTS*) Model *(10%)*
+Here [*we provide an overview*](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [*the following folder*](code/POTS_system/). Please create a **class** diagram of this model (replace the placeholder diagram). (you can use paper and pencil or a digital tool).
 
 # Part 3: Data Analysis
 
-## (Part 3.1) - Real Data **(10%)**
-
-Find a datasource that looks at part of this model - subway stations locations / escalator number, heights, widths / volume of passangers - ridership numbers   (*fits* - we are pretty loose here, it can be anything.)
+## (Part 3.1) - Real Data *(10%)*
+Find a datasource that looks at part of this model - subway stations locations / escalator number, heights, widths / volume of passangers - ridership numbers   (_fits_ - we are pretty loose here, it can be anything.)
 
 * Write up a paragraph that describes the data and how it fits into your system.
 * Load the data into Python
@@ -83,16 +77,12 @@ Find a datasource that looks at part of this model - subway stations locations /
 (Add your plots and visualization here)
 (Put your data into the data directory)
 
-
-## (Part 3.2) -  Plotting 2D Random Number Generators **(15%)**
-
+## (Part 3.2) -  Plotting 2D Random Number Generators *(15%)*
 This portion of the assignment looks at generating random numbers in Python and understanding how to properly plot them. Plot two different random numbers, pseudo random and quasi random, for five different N values. There should be 10 subplots, all properly formatted 2D plots. Note, each of the N points will have two coordinates, an x and a y, therefore you will need to generate two random numbers for each point. You should replace the image with your results in a simalar format. Discuss how the patterns differ. Feel free to change the N values from the suggested N values in the image to state your case.
 
-![Image of 2d template City](images/2Dtemplate.png)
+Image of 2d template City
 
-
-## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
-
+## (Part 3.3) -  Plotting 1D Random Distributions *(15%)*
 Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
 
 Repeat the above using a quasi-random generator. Discuss the similarities and differences.
