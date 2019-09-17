@@ -27,12 +27,13 @@ Historically, it has been important to improve the riding experience of publish 
 
 * Subway systems in major cities experience severe congestion at rush hour
 * One possibility to alleviate this congestion is to increase the throughput of subway escalators, which will in turn decrease transit time of riders
+* We want to test whether increasing the escalator speeds will signifcantly impact riders' transit times
 * The current project will construct a model that allows us to compare transit time of riders with escalator speeds set between .4 m/s and .8 m/s (standard configurations)
-* Transit time will be measured from the time a pedestrian is waiting at the bottom landing plate of an escalator to the time they exit at the upper landing plate
-* A 10% decrease in transit time from baseline will be considered a significant change
+* Transit time will be measured from the time that a pedestrian is waiting at the bottom landing plate of an escalator to the time they exit at the upper landing plate
+* A 10% decrease in transit time from current escalator configurations will be considered a significant change that warrants increasing escalator speed
 * The modeled will focus on an exit-only escalator (ignoring bidirectional entrances)
 * Pedestrians will not be allowed to walk up the escalator, but may occupy the steps non-uniformly (1 or 2 persons per step)
-* Travelers will arrive in blocks to emulate the arrival of trains at scheduled periods
+* It is assumed that riders will arrive in blocks at rates directly correlated to train arrival at the platform
 
 ## (Part 1.2) Subway (My Problem) Model *(10%)*
 (remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
@@ -44,7 +45,10 @@ Historically, it has been important to improve the riding experience of publish 
 * [*Agent / User case* (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
 
 ## (Part 1.3) Subway (My Problem) Simulation *(10%)*
-(remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
+
+ A discrete event based simulation will be used to simulate our model of a subway escalator. In this simulation, blocks of subways riders will add to a queue at the bottom of the escalator. New riders will arrive at the escalator at rates that are derived from real world ridership and train schedule data from the Washington D.C. metro. Steps at the bottom of the escalator (position 1) will be loaded with 1-2 riders depending on a random process. The steps will update their position based on the set speed of the escalator. 
+ 
+ Inputs for this simulation would be the frequency that new riders are added to the queue (as well as the number), the speed of the escalator, and the number of steps the escalator contains. This would allow us to adjust our simulation based on the height of an escalator and the traffic experienced by different subway stops. The output of this simulation would be a count of how many subways completed the system and the average amount of time it took them to ride the escalator. While increasing the speed of the escalator will obviously decrease the time it takes to ride it, this simulation will allow us to see if increasing an escalator's speed will have enough of an affect to warrant the decreased safety related to faster escalators. 
 
 ## (Part 1.4) Subway City (My Problem) Model *(10%)*
 [*Code template*](code/README.md) - Starting coding framework for the (insert your exact problem here.)
@@ -52,12 +56,13 @@ You are expected to create the python files - the code should run without errors
 
 ## (Part 1.5) Specifying the Inputs to a System *(10%)*
 (remove the below points once ideas are satisfied)
-* Specify the independent and dependent input variables of your subway esclator model
-* Specify where the data will come from measured subset of real data (empirical) or synthetic data
+* Indepdent Variables: (1)Speed of escalator (4 m/s, 6 m/s, or 8 m/s) and (2)height of escalator
+* Dependent Variables: (1) Total Escalator capacity per hour and (2) Average transit time
+* Our  data will come from synthetic data that is generated using WMATA publicly available ridership information
 * What kind of statistics are important to capture this input data
-* How do you plan to analyze the output of your model?
-* What ways will you visualize your data - charts, and graphs you will create?
-* What clever way will you visualize your output with a useful infographic?
+* Because we are comparing group averages,we will use an ANOVA to compare capacity and transit time accross groups
+* A clusted bar chart will be used to visual group differences between 3 set speeds of the escalator
+* We can embedd the data from our clustered bar graph in an infograph thats looks like a series of escalators 
 
 # Part 2: Creating a Model from Code
 
