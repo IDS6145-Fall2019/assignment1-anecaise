@@ -29,7 +29,7 @@ Historically, it has been important to improve the riding experience of publish 
 * One possibility to alleviate this congestion is to increase the throughput of subway escalators, which will in turn decrease transit time of riders
 * The current project will construct a model that allows us to compare transit time of riders with escalator speeds set between .4 m/s and .8 m/s (standard configurations)
 * Transit time will be measured from the time a pedestrian is waiting at the bottom landing plate of an escalator to the time they exit at the upper landing plate
-* A 10% decrease in transit time will be considered a effective esclator configuration
+* A 10% decrease in transit time from baseline will be considered a significant change
 * The modeled will focus on an exit-only escalator (ignoring bidirectional entrances)
 * Pedestrians will not be allowed to walk up the escalator, but may occupy the steps non-uniformly (1 or 2 persons per step)
 * Travelers will arrive in blocks to emulate the arrival of trains at scheduled periods
