@@ -80,6 +80,14 @@ Find a datasource that looks at part of this model - subway stations locations /
 * Visualize the raw data - visualize a few critical aspects of the data to better describe what it is, what it is showing, and why its useful to your system.
 * Calculate and plot some summary statistics that better describe the data.
 
+One dataset that will help  to build a framework for this simulation is the WMATA ridership data set ([*found here*](Data/). This data set contains the historical daily average ridership for each metro station in the DC metro system in the month of May. This data fits into the current simulation by providing real world data that we can use to feed our model as inputs. For example, this simulation requires some estimate of the number of riders per hour that a metro station experiences. 
+
+After a calculating descriptive statistics, it was found that the average ridership for all stations in WMATA was ~6883 (SD = 5586) in 2018. This number as remained relatively stable compared to the 2017 average (mean = 6814) and the 2016 average (mean = 7119). Descriptive statistics can be found [*here*](Data/)
+
+From these data, we see that ridership is stable year over year, but varies greatly station from station. The busiest stations can approach 30,000 average riders. For the current stimulation, it would make sense to model our system after the busiest WMATA stops. 
+
+
+
 (Add your plots and visualization here)
 (Put your data into the data directory)
 
