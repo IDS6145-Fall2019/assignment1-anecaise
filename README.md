@@ -99,4 +99,4 @@ This portion of the assignment looks at generating random numbers in Python and 
 ## (Part 3.3) -  Plotting 1D Random Distributions *(15%)*
 Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
 
-Repeat the above using a quasi-random generator. Discuss the similarities and differences.
+Looking at the differences (above) of random samples from three different tpyes of distribtuions, its clear that as our sample size gets larger the sample gets closer to the population distribution. With small sample sizes (n=10), it's hard to notice much of a difference between samples of different distributions. 
