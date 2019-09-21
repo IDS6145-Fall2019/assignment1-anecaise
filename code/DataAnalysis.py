@@ -24,12 +24,12 @@ data_summary.to_csv("../Data/descriptive_stats.csv")
 hist = plt.figure(1)
 plt.hist(data['2018***'], bins = 9, histtype = 'bar', color = 'grey',
          edgecolor = 'black', )
-plt.title("Average Daily Ridership - All WMATA Stations")
+plt.title("Daily Ridership - All WMATA Stations, May")
 plt.xlabel("Daily Ridership")
 plt.ylabel("Number of Stations")
 
 
-plt.savefig(fname = "../images/Raw_data_hist.png",dpi = 500, edgecolor='b')
+plt.savefig(fname = "../images/Raw_data_hist.png",dpi = 100, edgecolor='b')
 # plt.close()
 
 # Vis summary data
@@ -40,4 +40,4 @@ plt.bar(data_summary.columns, height = data_summary.iloc[1,:],
 plt.title(" WMATA Ridership Data Year over Year (2015-18)")
 plt.xlabel("Operation Year")
 plt.ylabel("Average Riders")
-plt.savefig("../Images/SummaryStats_visualized.png", dpi=500)
+plt.savefig("../Images/SummaryStats_visualized.png", dpi=100)

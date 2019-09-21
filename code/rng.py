@@ -153,7 +153,7 @@ axes.set_aspect(1*1)
 axes.set_xticks([])
 axes.set_yticks([])
 
-plt.savefig("../images/random_numbers.png", dpi=500)
+plt.savefig("../images/random_numbers.png", dpi=100)
 plt.show()
 
 
