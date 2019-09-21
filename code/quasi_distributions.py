@@ -145,5 +145,5 @@ axes.set_yticks([])
 axes.set_ylim(0, 8000/3)
 
 
-plt.savefig('../images/dist.png')
+plt.savefig('../images/quasi_dist.png')
 plt.show()
