@@ -1,15 +1,8 @@
 ## **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model
 
-(Remove: decribe the model here, use whatever diagram you need object, class, etc)
+The POTS Model is a small system for simulating the lifespan of various vegetables based on the nutrients and water available to plant. The model allows us to select from four vegetables (eggplant, bok choy, pepper, and string bean) and four soil types (compost, garden mix, Florida sand, and garden mix) that are contained within the container object. 
 
-(Remove: The code does run - you should try it. It does not do much, but has a very basic 
-simulation loop in it and key press to take a look at.)
+## POTS Class Diagram
+![POTS system](../../images/pots_class_diagram.png)
 
-(Remove: You kill your plants after a key timesteps, but you could always add nuterients
-from compost and add more water and tweak it based on measured constants to simulate
-a real system)
-
-
-Example linked diagram to help you.
-![POTS system](../../images/class_example_diagram.png)
-more decription
+The water object allows for additional events that affect the water content of the container, such as rain, snow, and evaporate that can be incorporated into our simulation. However, water and nutrients can simply be depleted over time, which results in the death of the vegetable.
