@@ -78,11 +78,11 @@ One dataset that will help  to build a framework for this simulation is the WMAT
 
 After a calculating descriptive statistics, it was found that the average ridership for all stations in WMATA was ~6883 (SD = 5586) in 2018. This number as remained relatively stable compared to the 2017 average (mean = 6814) and the 2016 average (mean = 7119). Descriptive statistics can be found [*here*](Data/)
 
-[! Data Histogram](images/Raw_data_hist.png)
+![Data Histogram](images/Raw_data_hist.png)
 
 A histogram of our data recveals that most stations have relatively low ridership numbers throughout the month (<5000);however, because several stations approaching 30k daily riders, ridership numbers are highly variable. 
 
-[! Summary Stat Bar Chart](images/SummaryStats_visualized.png)
+![Summary Stat Bar Chart](images/SummaryStats_visualized.png)
 
 From these data, we see that ridership is stable year over year. The busiest stations can approach 30,000 average riders. For the current stimulation, it would make sense to model our system after the busiest WMATA stops because these particular stops would be the problem areas in the system. 
 
