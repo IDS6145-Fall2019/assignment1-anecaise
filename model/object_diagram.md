@@ -1,4 +1,4 @@
-## Smart City (My Problem) Model - Object Diagram
+## Smart City  Escalator Speed and Metro Transit Time Model Model - Object Diagram
 
 The object diagram (below) visualizes a high-level overview of the current subway model. In this system, the escalator has been represented simply as a lower plate, upper plate, and a set number of steps in between. The subway rider enters this escalator system at the landing plate, which is where they will wait until they can board the escalator. 
 
