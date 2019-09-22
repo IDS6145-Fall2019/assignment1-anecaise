@@ -5,3 +5,5 @@ The activity diagram below is a visualization of the major workflow of the model
 ![Activity Diagram](/images/Activity_Diagram.png)
 
 The step then goes through a similar process. Every time sequence, the step position is increased by 1. When the step reaches the final position (numbers of steps + 1), the passenger exits the system at the upper plate. Data is logged and the step resets. 
+
+Please see the [*Sequence Diagram*](/model/sequence_diagram.md) for an overview of this system's workflow with multiple passengers in the queue. 
