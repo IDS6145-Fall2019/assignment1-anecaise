@@ -1,13 +1,7 @@
 ## Smart City (My Problem) Model - Object Diagram
 
-(remove: provide a description of the current model you describe below)
+The object diagram (below) visualizes a high-level overview of the current subway model. In this system, the escalator has been represented simply as a lower plate, upper plate, and a set number of steps in between. The subway rider enters this escalator system at the landing plate, which is where they will wait until they can board the escalator. 
 
-(remove: use images!!!)
-(remove: I added an example image to illustrate [**how to use Markdown**](https://guides.github.com/features/mastering-markdown/), maybe consider a tool like [**Haroodpad**](http://pad.haroopress.com/user.html) )
+![Object Diagram](/images/Object_Diagram.png)
 
-![Example Object Diagram](../images/class_example_diagram.png)
-
-(remove: More decription)
-(remove: Maybe a second or third diagram to highlight a point or aspect)
-
-(remove: each diagram markdown file should roughly follow this template)
+After a subway rider enters the system, they will transition between the landing plate, step, and upper plate (exit). This is a simplified view that focuses only the transit time and capacity of an escalator in isolation. There are other considerations in the real world like physical constraints that may affect the queue.
