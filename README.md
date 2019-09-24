@@ -58,8 +58,9 @@ See below for a high level overview of the proposed subway escalator model. The 
 
 ## (Part 1.4) Subway City Escalator Speed and Metro Transit Time Model *(10%)*
 
-[*Code template*](/code/README.md) - Starting code framework for the Escalator Speed and Metro Transit Time model.
-([*Code Found Here*](/code/))
+[*See Here for Code Template*](/code/README.md) - Starting code framework for the Escalator Speed and Metro Transit Time model.
+
+([*Python Code Found Here*](/code/))
 
 ## (Part 1.5) Specifying the Inputs to a System *(10%)*
 
@@ -73,7 +74,10 @@ See below for a high level overview of the proposed subway escalator model. The 
 # Part 2: Creating a Model from Code
 
 ## (Part 2.1) *P*ortable *O*rganic *T*rouble-free *S*elf-watering System (*POTS*) Model *(10%)*
-Here [*we provide an overview*](/code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [*the following folder*](/code/POTS_system/). 
+[*Here is a model overview*](/code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model 
+
+Source code template for the code found in  [*the following folder*](/code/POTS_system/). 
+
 
 ![image of pots class diagram](/images/pots_class_diagram.png)
 
@@ -82,13 +86,18 @@ Here [*we provide an overview*](/code/POTS_system/README.md) of the **P**ortable
 
 ## (Part 3.1) - Real Data *(10%)*
 
-One dataset that will help  to build a framework for this simulation is the WMATA ridership data set ([*found here*](Data/)). This data set contains the historical daily average ridership for each metro station in the DC metro system in the month of May. This data fits into the current simulation by providing real world data that we can use to feed our model as inputs. For example, this simulation requires some estimate of the number of riders per hour that a metro station experience. 
+Two datasets that will help to build a framework for this simulation are the D.C. WMATA ridership data set ([*found here*](/Data/ridership.xlsx)) and the New York City subway entrance dataset ([*found here*](/Data/nyc_transit.csv)). The WMATA data set contains historical  average ridership numbers for each  station in the DC metro system for the month of May. Ridership information fits into the current simulation by providing real world data that we can use to feed our model as inputs. For example, this simulation requires some estimate of the number of riders per hour that a metro station experience. Althought the current model will focus on escalator entrance, the NYC subway dataset allows us to get an idea of how frequent escalators are within different subway systems. This will help understand the applicability of our experiments. 
 
-After calculating descriptive statistics, it was found that the average ridership for all stations in WMATA was ~6883 (SD = 5586) in 2018. This number as remained relatively stable compared to the 2017 average (mean = 6814) and the 2016 average (mean = 7119). Descriptive statistics can be found [*here*](Data/)
+![Entrance types - NYC](/images/NYC_entrance_types.png)
+
+From a frequency chart of subway entrances in NYC, it is clear that our results will be less releavant for the NYC subway system than they might be for more acesseible systems like the Washington D.C. WMATA. 
 
 ![Data Histogram](/images/Raw_data_hist.png)
 
-A histogram of our data reveals that most stations have relatively low ridership numbers throughout the month (<5000);however, because several stations approaching 30k daily riders, ridership numbers are highly variable. 
+A histogram of WMATA ridership data reveals that most stations in D.C. have relatively low ridership numbers throughout the month  of May (<5000);however, because several stations experience ~28k daily riders, these numbers are highly variable. 
+
+
+After calculating descriptive statistics, it was found that the average ridership for all stations in WMATA was ~6883 (SD = 5586) in 2018. This number as remained relatively stable compared to the 2017 average (mean = 6814) and the 2016 average (mean = 7119). Descriptive statistics can be found [*here*](/Data/descriptive_stats.csv)
 
 ![Summary Stat Bar Chart](/images/SummaryStats_visualized.png)
 
