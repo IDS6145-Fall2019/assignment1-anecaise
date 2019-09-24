@@ -54,7 +54,19 @@ See below for a high level overview of the proposed subway escalator model. The 
 
  A discrete event based simulation will be used to simulate our model of a subway escalator. In this simulation, blocks of subways riders will add to a queue at the bottom of the escalator. New riders will arrive at the escalator at rates that are derived from real world ridership and train schedule data from the Washington D.C. metro. Steps at the bottom of the escalator (position 1) will be loaded with 1-2 riders depending on a random process. The steps will update their position based on the set speed of the escalator. 
  
- Inputs for this simulation would be the frequency that new riders are added to the queue (as well as the number), the speed of the escalator, and the number of steps the escalator contains. This would allow us to adjust our simulation based on the height of an escalator and the traffic experienced by different subway stops. The output of this simulation would be a count of how many subways completed the system and the average amount of time it took them to ride the escalator. While increasing the speed of the escalator will obviously decrease the time it takes to ride it, this simulation will allow us to see if increasing an escalator's speed will have enough of an affect to warrant the decreased safety related to faster escalators. 
+ Inputs for this simulation would be:
+ 
+  * frequency that new riders are added to the queue (as well as the number)
+  * the speed of the escalator
+  * the number of steps the escalator contains (height)
+
+This would allow us to adjust our simulation based on the height of an escalator and the traffic experienced by different subway stops. 
+
+The output of this simulation would be:
+* a count of how many subways riders completed the system 
+* the average amount of time it took them to ride the escalator.
+
+While increasing the speed of the escalator will obviously decrease the time it takes to ride it, this simulation will allow us to see if increasing an escalator's speed will have enough of an affect to warrant the decreased safety related to faster escalator speeds. 
 
 ## (Part 1.4) Subway City Escalator Speed and Metro Transit Time Model *(10%)*
 
