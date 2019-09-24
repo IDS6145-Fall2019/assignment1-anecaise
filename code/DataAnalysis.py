@@ -7,6 +7,7 @@
 # import
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # Set path & read file
@@ -30,6 +31,8 @@ plt.ylabel("Number of Stations")
 
 
 plt.savefig(fname = "../images/Raw_data_hist.png",dpi = 100, edgecolor='b')
+plt.show()
+
 # plt.close()
 
 # Vis summary data
@@ -41,3 +44,19 @@ plt.title(" WMATA Ridership Data Year over Year (2015-18)")
 plt.xlabel("Operation Year")
 plt.ylabel("Average Riders")
 plt.savefig("../Images/SummaryStats_visualized.png", dpi=100)
+plt.show()
+
+
+# Visual Raw Data Set (NYC Transit)
+data2 =  pd.read_csv("../Data/nyc_transit.csv")
+data2 = data2[data2['Entrance Type'] != 'Ramp']
+data2 = data2[data2['Entrance Type'] != 'Walkway']
+
+freq = sns.countplot(y = 'Entrance Type', hue = 'Division', data = data2,
+                     palette = 'Greys_d')
+plt.title('NYC Subway Entrance Type')
+plt.xlabel('Number of Stations')
+plt.ylabel('Entrance Type')
+plt.tight_layout()
+plt.savefig("../Images/NYC_entrance_types.png", dpi = 100)
+plt.show()
